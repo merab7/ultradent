@@ -106,10 +106,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   word-break: break-word;
   -webkit-font-smoothing: antialiased;
+
+
 }
 section {
   padding-top: 110px;
-  padding-bottom: 110px;
+  padding-bottom: 500px;
 }
 section.half-section {
   padding-top: 70px;
@@ -2145,7 +2147,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   height: 100vh;
 }
 .full-screen.top-space-margin {
-  height: calc(100vh - 96px);
+  height: calc(50vh - 96px);
 }
 /* Video icons */
 @-webkit-keyframes video-icon-sonar {
@@ -6772,9 +6774,11 @@ header .header-top-bar [class*=col-] .header-icon {
 }
 header .navbar {
   position: fixed;
-  top: 0;
   right: 0;
   left: 0;
+  top:0;
+  padding: 20px;
+  margin-top: 80px;
   z-index: 99;
 }
 header .navbar [class*=col-] {
@@ -9032,7 +9036,7 @@ button:focus {
   display: none;
 }
 .top-space-margin {
-  margin-top: 96px;
+  margin-top: 0px;
 }
 .top-space-padding {
   padding-top: 96px;
@@ -19232,3 +19236,103 @@ footer .footer-navbar .nav-item:last-child a {
 .footer-demo img {
   max-height: 55px !important;
 }
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-10px {
+  top: 10px;
+}
+
+.lg-top-minus-80px {
+  top: -80px;
+}
+
+.left-minus-80px {
+  left: -80px;
+}
+
+.lg-left-15px {
+  left: 15px;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.w-350px {
+  width: 350px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-lg-inline-block {
+  display: inline-block;
+}
+
+.bg-gradient-very-light-gray {
+  background: linear-gradient(to right, #f0f0f0, #ffffff); /* Example gradient */
+}
+
+.border-radius-10px {
+  border-radius: 10px;
+}
+
+.lg-no-border-radius {
+  border-radius: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.full-size-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-box-content {
+  flex: 1;
+}
+
+.feature-box-content p {
+  margin-bottom: auto;
+}
+
+.feature-box-content a {
+  align-self: flex-end;
+}
+
+
+/* Additional styles as per your requirement */
