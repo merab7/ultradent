@@ -106,7 +106,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   word-break: break-word;
   -webkit-font-smoothing: antialiased;
-
+  margin-top: 161px;
 
 }
 section {
@@ -6776,9 +6776,8 @@ header .navbar {
   position: fixed;
   right: 0;
   left: 0;
-  top:0;
-  padding: 20px;
-  margin-top: 80px;
+
+  margin-top: -92px;
   z-index: 99;
 }
 header .navbar [class*=col-] {
@@ -19236,83 +19235,6 @@ footer .footer-navbar .nav-item:last-child a {
 .footer-demo img {
   max-height: 55px !important;
 }
-/* Reset and basic styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-
-.position-absolute {
-  position: absolute;
-}
-
-.top-10px {
-  top: 10px;
-}
-
-.lg-top-minus-80px {
-  top: -80px;
-}
-
-.left-minus-80px {
-  left: -80px;
-}
-
-.lg-left-15px {
-  left: 15px;
-}
-
-.opacity-1 {
-  opacity: 1;
-}
-
-.w-350px {
-  width: 350px;
-}
-
-.z-index-1 {
-  z-index: 1;
-}
-
-.d-none {
-  display: none;
-}
-
-.d-lg-inline-block {
-  display: inline-block;
-}
-
-.bg-gradient-very-light-gray {
-  background: linear-gradient(to right, #f0f0f0, #ffffff); /* Example gradient */
-}
-
-.border-radius-10px {
-  border-radius: 10px;
-}
-
-.lg-no-border-radius {
-  border-radius: 0;
-}
-
-.text-center {
-  text-align: center;
-}
-
 .full-size-box {
   width: 100%;
   height: 100%;
@@ -19335,4 +19257,11 @@ body {
 }
 
 
-/* Additional styles as per your requirement */
+.noto-serif-georgian {
+  font-family: "Noto Serif Georgian", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
