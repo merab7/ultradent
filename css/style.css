@@ -2619,90 +2619,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 .magic-round-cursor #ball-cursor:after {
   display: none;
 }
-/* Anime animation */
-[data-anime] {
-  opacity: 0;
-  transition: none;
-}
-[data-anime].appear {
-  opacity: 1;
-}
-[data-anime].btn {
-  transition: none;
-}
-[data-anime].btn.anime-complete {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-/* Atropos box */
-.atropos-shadow {
-  background-color: transparent !important;
-  filter: inherit;
-}
 
-.atropos-highlight {
-  background-image: inherit !important;
-}
-/* Only for safari browser */
-@media not all and (min-resolution: 0.001dpcm) {
-  [data-anime] [class*=text-shadow-] {
-    text-shadow: none;
-  }
-  [data-anime][class*=text-shadow-] {
-    text-shadow: none;
-  }
-  [data-fancy-text] [class*=text-shadow-] {
-    text-shadow: none;
-  }
-  [data-fancy-text][class*=text-shadow-] {
-    text-shadow: none;
-  }
-  /* font awesome icon gradient color */
-  .review-star-icon i {
-    display: inline;
-  }
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* color issue */
-  .text-white a[href^=tel] {
-    color: var(--white);
-  }
-  .text-dark-gray a[href^=tel] {
-    color: var(--text-dark-gray);
-  }
-}
-.swiper-slide [data-fancy-text] {
-  opacity: 0;
-}
-.swiper-slide [data-fancy-text].appear {
-  opacity: 1;
-}
-.swiper-slide.swiper-slide-active [data-fancy-text] {
-  opacity: 1;
-}
-.swiper-slide.swiper-slide-active [data-anime] {
-  opacity: 1;
-}
-.swiper-slide [data-anime] {
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.no-animation .anime-text .whitespace {
-  display: inline-block;
-}
-.no-animation .anime-text .whitespace::after {
-  content: "r";
-  opacity: 0;
-  font-size: 70%;
-}
-.no-animation [data-anime], .no-animation [data-fancy-text] {
-  opacity: 1;
-  transition: none;
-}
-/* Data top bottom transition animation */
-[data-top-bottom] {
-  transition: transform 0.65s cubic-bezier(0.23, 1, 0.32, 1);
-}
 /* Custom cursor */
 @media (hover: hover) and (pointer: fine) {
   .custom-cursor .circle-cursor {
@@ -6776,10 +6693,11 @@ header .navbar {
   position: fixed;
   right: 0;
   left: 0;
-
-  margin-top: -92px;
+  padding: 13px;
+  margin-top: -75px;
   z-index: 99;
 }
+
 header .navbar [class*=col-] {
   padding: 0 15px;
   display: -webkit-box;
@@ -19265,3 +19183,41 @@ footer .footer-navbar .nav-item:last-child a {
   font-variation-settings:
     "wdth" 100;
 }
+
+@media (max-width: 576px) {
+.header-button {
+position: absolute;
+top: 15px;
+left: 15px;
+}
+
+}
+
+  @media (min-width: 576px) {
+  .header-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  }
+
+  }
+
+  .swiper-container {
+    width: 100%;
+    max-width: 1000px; /* Adjust this value to your desired fixed width */
+    overflow: hidden; /* Ensure no overflow */
+    position: relative; /* Required for correct positioning */
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition-property: transform;
+}
+
+.swiper-slide {
+    width: 100%; /* Adjust slide width if needed */
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+    
