@@ -19197,7 +19197,8 @@ left: 15px;
   .header-button {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 105px;
+  margin-top: 10px;
   }
 
   }
