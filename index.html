@@ -28,24 +28,23 @@
 <body data-mobile-nav-style="classic">
     <header>
         <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg header-light bg-white p-2 ">
+        <nav class="navbar navbar-expand-lg header-light bg-white p-2">
             <div class="container-fluid">
-                <div class="col-auto col-lg-2 me-lg-0 me-auto ">
+                <div class="col-auto col-lg-2 me-lg-0 me-auto">
                     <a class="text-center fw-800 logo fs-18" href="#main_page">
-                        <img src="logo.png"  class="rounded-circle w-50px h-50px">
-                       <span class="ultradentText" id="ultradent"> Ultradent</span>
+                        <img src="logo.png" class="rounded-circle w-50px h-50px">
+                        <span class="ultradentText" id="ultradent"> Ultradent</span>
                     </a>
-                    
                 </div>
                 <div class="col-auto col-lg-8 menu-order position-static">
-                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                    <button class="navbar-toggler float-start" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-line"></span>
                         <span class="navbar-toggler-line"></span>
                         <span class="navbar-toggler-line"></span>
                         <span class="navbar-toggler-line"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="container  navbar-nav justify-content-center ml-auto">
+                        <ul class="navbar-nav justify-content-center ">
                             <li class="nav-item"><a id="nmainp" class="nav-link" href="#main_page">მთავარი გვერდი</a></li>
                             <li class="nav-item"><a id="nabout" class="nav-link" href="#about">ჩვენ შესახებ</a></li>
                             <li class="nav-item"><a id="nservices" class="nav-link" href="#services">მომსახურება</a></li>
@@ -55,10 +54,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-auto col-lg-2 text-end ">
+                <div class="col-auto col-lg-2 text-end">
                     <div class="header-icon">
-                        <div class="header-button ">
-                            <a href="#" class="btn btn-small btn-base-color left-icon btn-round-edge btn-box-shadow dropdown-toggle " data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="header-button">
+                            <a href="#" class="btn btn-small btn-base-color left-icon btn-round-edge btn-box-shadow dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span>
                                     <span><i class="feather icon-feather-globe"></i></span>
                                     <span id="lan" class="btn-double-text" data-text="Book online">ენა</span>
@@ -95,7 +94,6 @@
                             <li class="nav-item"><a href="#contact" id="fcontact" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -114,67 +112,64 @@
 
     <!-- Custom Script -->
     <script>
-function changeLanguage(language) {
-    if (language === 'georgian') {
-        $("#content").load("/ultradentgeo.html");
-        $("#lan").text('ქართული');
-        $("#fcontact").text('კონტაქტი');
-        $("#fmainp").text('მთავარი გვერდი');
-        $("#fabout").text('ჩვენ შესახებ');
-        $("#fservices").text('მომსახურებები');
-        $("#fdoctors").text('ექიმები');
-        $("#fconsultation").text('კონსულტაცია');
-        $("#ncontact").text('კონტაქტი');
-        $("#nmainp").text('მთავარი გვერდი');
-        $("#nabout").text('ჩვენ შესახებ');
-        $("#nservices").text('მომსახურებები');
-        $("#nconsultation").text('კონსულტაცია');
-        $("#ndoctors").text('ექიმები');
-        $("#ultradent").text('ულტრადენტი');
-        $("#sidecontact").text('კონსულტაციისთვის დაგვიკავშირდით');
-    } else if (language === 'english') {
-        $("#content").load("/ultradenteng.html");
-        $("#ncontact").text('Contact');
-        $("#nmainp").text('Home');
-        $("#nabout").text('About');
-        $("#nservices").text('Services');
-        $("#ndoctors").text('Doctors');
-        $("#nconsultation").text('Consultation');
-        $("#lan").text('English');
-        $("#fcontact").text('Contact');
-        $("#fmainp").text('Home');
-        $("#fabout").text('About');
-        $("#fservices").text('Services');
-        $("#fconsultation").text('Consultation');
-        $("#fdoctors").text('Doctors');
-        $("#ultradent").text('Ultradent');
-        $("#sidecontact").text('For Consultation Contact us');
-    }
-
-    // Reload the page after changing language
-  
-}
-
-    $(document).ready(function() {
-        changeLanguage('georgian');
-
-        // Smooth scrolling for anchor links
-        $("a.nav-link").on('click', function(event) {
-            // Close the collapsed navbar if it's open
-            $(".navbar-collapse").collapse('hide');
-
-            // Smooth scroll to the anchor point
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-                    window.location.hash = hash;
-                });
+        function changeLanguage(language) {
+            if (language === 'georgian') {
+                $("#content").load("/ultradentgeo.html");
+                $("#lan").text('ქართული');
+                $("#fcontact").text('კონტაქტი');
+                $("#fmainp").text('მთავარი გვერდი');
+                $("#fabout").text('ჩვენ შესახებ');
+                $("#fservices").text('მომსახურებები');
+                $("#fdoctors").text('ექიმები');
+                $("#fconsultation").text('კონსულტაცია');
+                $("#ncontact").text('კონტაქტი');
+                $("#nmainp").text('მთავარი გვერდი');
+                $("#nabout").text('ჩვენ შესახებ');
+                $("#nservices").text('მომსახურებები');
+                $("#nconsultation").text('კონსულტაცია');
+                $("#ndoctors").text('ექიმები');
+                $("#ultradent").text('ულტრადენტი');
+                $("#sidecontact").text('კონსულტაციისთვის დაგვიკავშირდით');
+            } else if (language === 'english') {
+                $("#content").load("/ultradenteng.html");
+                $("#ncontact").text('Contact');
+                $("#nmainp").text('Home');
+                $("#nabout").text('About');
+                $("#nservices").text('Services');
+                $("#ndoctors").text('Doctors');
+                $("#nconsultation").text('Consultation');
+                $("#lan").text('English');
+                $("#fcontact").text('Contact');
+                $("#fmainp").text('Home');
+                $("#fabout").text('About');
+                $("#fservices").text('Services');
+                $("#fconsultation").text('Consultation');
+                $("#fdoctors").text('Doctors');
+                $("#ultradent").text('Ultradent');
+                $("#sidecontact").text('For Consultation Contact us');
             }
+        }
+
+        $(document).ready(function() {
+            changeLanguage('georgian');
+
+            // Smooth scrolling for anchor links
+            $("a.nav-link").on('click', function(event) {
+                // Close the collapsed navbar if it's open
+                $(".navbar-collapse").collapse('hide');
+
+                // Smooth scroll to the anchor point
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
-    });
     </script>
 </body>
 </html>
