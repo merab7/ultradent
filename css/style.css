@@ -19187,16 +19187,15 @@ footer .footer-navbar .nav-item:last-child a {
 @media (max-width: 576px) {
 .header-button {
 position: absolute;
-top: 15px;
 right:50px;
 }
 
 }
 
-  @media (min-width: 576px) {
+  @media (min-width: 900px) {
   .header-button {
   position: absolute;
-  top: 15px;
+  top: 50px;
   right: 105px;
 
   }
