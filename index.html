@@ -28,14 +28,14 @@
 <body data-mobile-nav-style="classic">
     <header>
         <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg header-light bg-white">
+        <nav class="navbar navbar-expand-lg header-light bg-white ">
             <div class="container-fluid">
-                <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="demo-medical.html">
-                        <img src="images/demo-medical-logo-black.png" data-at2x="images/demo-medical-logo-black@2x.png" alt="" class="default-logo">
-                        <img src="images/demo-medical-logo-black.png" data-at2x="images/demo-medical-logo-black@2x.png" alt="" class="alt-logo">
-                        <img src="images/demo-medical-logo-black.png" data-at2x="images/demo-medical-logo-black@2x.png" alt="" class="mobile-logo">
+                <div class="col-auto col-lg-2 me-lg-0 me-auto ">
+                    <a  class="text-center fw-800 logo fs-24 " href="#main_page">
+                        <img src="images/logo.jpg" data-at2x="images/demo-medical-logo-black@2x.png" alt="" class="rounded-circle w-50px h-50px">
+                       <span id="ultradent"> Ultradent</span>
                     </a>
+                   
                 </div>
                 <div class="col-auto col-lg-8 menu-order position-static">
                     <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
@@ -49,15 +49,16 @@
                             <li class="nav-item"><a id="nmainp" class="nav-link" href="#main_page">მთავარი გვერდი</a></li>
                             <li class="nav-item"><a id="nabout" class="nav-link" href="#about">ჩვენ შესახებ</a></li>
                             <li class="nav-item"><a id="nservices" class="nav-link" href="#services">მომსახურება</a></li>
+                            <li class="nav-item"><a id="ndoctors" class="nav-link" href="#doctors">ექიმები</a></li>
                             <li class="nav-item"><a id="nconsultation" class="nav-link" href="#contact">კონსულტაცია</a></li>
                             <li class="nav-item"><a id="ncontact" class="nav-link" href="#contact">კონტაქტი</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-auto col-lg-2 text-end">
+                <div class="col-auto col-lg-2 text-end ">
                     <div class="header-icon">
-                        <div class="header-button">
-                            <a href="#" class="btn btn-small btn-base-color left-icon btn-round-edge btn-box-shadow dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="header-button ">
+                            <a href="#" class="btn btn-small btn-base-color left-icon btn-round-edge btn-box-shadow dropdown-toggle " data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span>
                                     <span><i class="feather icon-feather-globe"></i></span>
                                     <span id="lan" class="btn-double-text" data-text="Book online">ენა</span>
@@ -89,6 +90,8 @@
                             <li class="nav-item"><a href="#main_page" id="fmainp" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="#about" id="fabout" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#services" id="fservices" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="#doctors" id="fdoctors" class="nav-link">Doctors</a></li>
+                            <li class="nav-item"><a href="#contact" id="fconsultation" class="nav-link">Consultation</a></li>
                             <li class="nav-item"><a href="#contact" id="fcontact" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
@@ -105,7 +108,7 @@
         </div>
     </footer>
     <div class="sticky-wrap d-none d-xl-inline-block" data-animation-delay="100" data-shadow-animation="true">
-        <span class="fs-15 fw-500 d-flex align-items-center"><i class="bi bi-envelope icon-small me-10px align-middle"></i><a href="#contact" class="text-decoration-line-bottom fw-700 lh-22">For Consultation Contact us</a></span>
+        <span  class="fs-15 fw-500 d-flex align-items-center"><i class="bi bi-envelope icon-small me-10px align-middle"></i> <a id="sidecontact" href="#contact" class="text-decoration-line-bottom fw-700 lh-22">For Consultation Contact us</a></span>
     </div>
     <div class="scroll-progress d-none d-xxl-block">
         <a href="#" class="scroll-top" aria-label="scroll">
@@ -126,18 +129,23 @@ function changeLanguage(language) {
         $("#fmainp").text('მთავარი გვერდი');
         $("#fabout").text('ჩვენ შესახებ');
         $("#fservices").text('მომსახურებები');
+        $("#fdoctors").text('ექიმები');
         $("#fconsultation").text('კონსულტაცია');
         $("#ncontact").text('კონტაქტი');
         $("#nmainp").text('მთავარი გვერდი');
         $("#nabout").text('ჩვენ შესახებ');
         $("#nservices").text('მომსახურებები');
         $("#nconsultation").text('კონსულტაცია');
+        $("#ndoctors").text('ექიმები');
+        $("#ultradent").text('ულტრადენტი');
+        $("#sidecontact").text('კონსულტაციისთვის დაგვიკავშირდით');
     } else if (language === 'english') {
         $("#content").load("/ultradenteng.html");
         $("#ncontact").text('Contact');
         $("#nmainp").text('Home');
         $("#nabout").text('About');
         $("#nservices").text('Services');
+        $("#ndoctors").text('Doctors');
         $("#nconsultation").text('Consultation');
         $("#lan").text('English');
         $("#fcontact").text('Contact');
@@ -145,6 +153,9 @@ function changeLanguage(language) {
         $("#fabout").text('About');
         $("#fservices").text('Services');
         $("#fconsultation").text('Consultation');
+        $("#fdoctors").text('Doctors');
+        $("#ultradent").text('Ultradent');
+        $("#sidecontact").text('For Consultation Contact us');
     }
 
     // Reload the page after changing language

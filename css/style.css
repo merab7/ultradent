@@ -6777,11 +6777,11 @@ header.sticky.sticky-active .header-reverse.header-dark.glass-effect {
 }
 header.sticky.sticky-active .navbar-brand .alt-logo {
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
   width: auto;
 }
 header.sticky.sticky-active .navbar-brand .default-logo {
-  visibility: hidden;
+
   opacity: 0;
   width: 0;
 }
@@ -19188,7 +19188,7 @@ footer .footer-navbar .nav-item:last-child a {
 .header-button {
 position: absolute;
 top: 15px;
-left: 15px;
+right:50px;
 }
 
 }
@@ -19198,7 +19198,7 @@ left: 15px;
   position: absolute;
   top: 15px;
   right: 105px;
-  margin-top: 10px;
+
   }
 
   }
@@ -19221,4 +19221,12 @@ left: 15px;
     box-sizing: border-box;
 }
 
+
+.hero_section{
+   background-image: url(/images/herobg.png);
+}
+
+.logo{
+  color: #009999;
+}
     
