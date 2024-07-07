@@ -19229,4 +19229,9 @@ right:50px;
 .logo{
   color: #009999;
 }
-    
+
+@media (max-width: 768px) {
+  .ultradentText {
+      display: none;
+  }
+}
