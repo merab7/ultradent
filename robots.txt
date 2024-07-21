@@ -1,0 +1,12 @@
+# Block all web crawlers from accessing specific folders
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
+# Allow specific bots to access everything
+User-agent: Googlebot
+Disallow:
+
+# Specify the location of the sitemap
+Sitemap: http://www.ultradentsmile.com/sitemap.xml
