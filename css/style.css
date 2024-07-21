@@ -6693,8 +6693,8 @@ header .navbar {
   position: fixed;
   right: 0;
   left: 0;
-  padding: 13px;
-  margin-top: -75px;
+  top: 0;
+  text-align: center;
   z-index: 99;
 }
 
